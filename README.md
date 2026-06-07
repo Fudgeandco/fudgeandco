@@ -5,13 +5,276 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
- 
+- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fudge & Co. | Haute Chocolaterie</title>
+    <style>
+        /* Premium Typography & Core Reset */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #f5f5f7;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Luxury Header Section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.98)), 
+                        url('https://unsplash.com') center/cover;
+            padding: 80px 20px;
+            border-bottom: 1px solid #222222;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            color: #d4af37;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+        }
+        header p {
+            margin: 15px 0 0 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #a8a8a8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 700px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Pure Veg Luxury Tag */
+        .badge {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #4caf50;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            border: 1px solid #2d2d2d;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+
+        /* Premium Menu Wrapper */
+        .menu-card {
+            background: #121212;
+            border: 1px solid #2a2a2a;
+            border-radius: 0px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        
+        .menu-title {
+            font-size: 1.8rem;
+            color: #d4af37;
+            margin-bottom: 25px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #222222;
+            padding-bottom: 15px;
+        }
+
+        /* Centered Product Image Style */
+        .product-image {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border: 1px solid #2a2a2a;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        /* Menu Item Layout */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 20px 0;
+            border-bottom: 1px solid #222222;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            text-align: left;
+            padding-right: 15px;
+        }
+        .item-name {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        .item-desc {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #888888;
+            margin-top: 5px;
+        }
+        .item-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #d4af37;
+            font-family: 'Helvetica Neue', sans-serif;
+            white-space: nowrap;
+        }
+
+        /* Luxury Experiential Box */
+        .info-box {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #aaaaaa;
+            background: #121212;
+            padding: 25px;
+            border-left: 2px solid #d4af37;
+            text-align: left;
+            margin-bottom: 40px;
+            border-top: 1px solid #222222;
+            border-right: 1px solid #222222;
+            border-bottom: 1px solid #222222;
+        }
+
+        /* Order Button - Matte Gold Style */
+        .btn-whatsapp {
+            display: inline-block;
+            background: #d4af37;
+            color: #0a0a0a;
+            text-decoration: none;
+            padding: 18px 40px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 0px;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background: #ffffff;
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .phone-display {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #888888;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Header Background -->
+    <header>
+        <h1>FUDGE & CO.</h1>
+        <p>Haute Chocolaterie & Micro-Bakery</p>
+    </header>
+
+    <div class="container">
+        <!-- Premium Green Indicator Tag -->
+        <span class="badge">🟢 Artisanal • Pure Vegetarian • Baked to Order</span>
+
+        <!-- SECTION 1: THE SIGNATURE COLLECTION -->
+        <div class="menu-card">
+            <div class="menu-title">The Signature Collection</div>
+            
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">The Signature Duo Pack</div>
+                    <div class="item-desc">Two generous squares of intensive dark cocoa brownie styled with a rich velvet chocolate drizzle.</div>
+                </div>
+                <div class="item-price">₹120</div>
+            </div>
+            
+            <!-- Chocolate Drizzle Brownie Image -->
+            <img src="https://unsplash.com" alt="Signature Chocolate Drizzle Brownie" class="product-image">
+            
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">The Connoisseur Share Box</div>
+                    <div class="item-desc">Four signature drizzle squares. Perfectly crisped crackly top with a dense molten center.</div>
+                </div>
+                <div class="item-price">₹220</div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: LIMITED DROPS & ARTISANAL BREWS -->
+        <div class="menu-card">
+            <div class="menu-title">Limited Additions & Elixirs</div>
+            
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">The Lotus Biscoff Slab (Limited Edition)</div>
+                    <div class="item-desc">Our core fudgy brownie loaded with crushed caramelized Biscoff biscuits and a warm cookie butter swirl.</div>
+                </div>
+                <div class="item-price">₹250</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Belgian Iced Chocolate (300ml)</div>
+                    <div class="item-desc">Slow-brewed, intense premium cocoa elixir served chilled. The perfect cooling pairing for a rich brownie.</div>
+                </div>
+                <div class="item-price">₹100</div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: CURATED SERVICES -->
+        <div class="menu-card">
+            <div class="menu-title">Curated Experiences</div>
+            
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">The Celebration Luxury Box Upgrade</div>
+                    <div class="item-desc">Your choice of box wrapped elegantly in satin black ribbon, complete with a handwritten custom card and a celebration candle.</div>
+                </div>
+                <div class="item-price">+₹130</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">The Monthly Concierge Subscription</div>
+                    <div class="item-desc">A premium monthly allocation. We automatically drop a fresh Signature Share Box to your villa porch every Saturday at 16:00 for 4 weeks.</div>
+                </div>
+                <div class="item-price">₹800</div>
+            </div>
+        </div>
+
+        <!-- Premium Operations Experience Text -->
+        <div class="info-box">
+            <strong style="color: #ffffff; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem;">🔒 Private Porch Delivery Concierge</strong><br style="margin-bottom: 8px;">
+            Every batch is individually structured on Saturday morning using premium couverture chocolate blocks. Deliveries are executed via zero-contact porch placement directly to your estate villa handle between 16:00 and 17:00. Secure digital settlement link or clean parcel cash drop requested.
+        </div>
+
+        <!-- Order Hyperlink -->
+        <a href="https://wa.me:" class="btn-whatsapp" target="_blank">
+            Request Order Allocation
+        </a>
+        <span class="phone-display">Concierge Desk: +91 81218 99610</span>
+    </div>
+
+    <footer>
+        <p>© 2026 Fudge & Co. Estate Culinary Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
